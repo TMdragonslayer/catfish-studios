@@ -1,4 +1,0 @@
-repository "motorcycle mayhem/motorcycle mayhem@9071889273284@cloud"
-  path "/"
-    br "/main"
-    co "/main"
