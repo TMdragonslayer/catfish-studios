@@ -1,0 +1,109 @@
+{
+    "version": 1,
+    "name": "playerjoiner",
+    "maps": [
+        {
+            "name": "PlayerInputManager",
+            "id": "b26a98a7-d827-4f23-9567-e90dd2a51ed4",
+            "actions": [
+                {
+                    "name": "JoinPlayer",
+                    "type": "Button",
+                    "id": "688fc7a9-f963-417d-9c5f-e16ba68c6b79",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnPlayerJoined",
+                    "type": "Button",
+                    "id": "28e553ef-c781-4261-914d-aa1b8afcbfdb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnPlayerLeft",
+                    "type": "Button",
+                    "id": "fd9747a5-7058-401c-a332-a413f34d3de9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "825808d0-ef06-4aa8-b575-632165af60ae",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";contorler",
+                    "action": "JoinPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e184af00-64b0-41e1-a54b-7253ad8b29ee",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";keyboard",
+                    "action": "JoinPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76770df0-a89a-4a4d-a0a7-d99dc4d8d46d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnPlayerJoined",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2da4b93a-6c50-4a74-aa64-826fa07d58e0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnPlayerLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "contorler",
+            "bindingGroup": "contorler",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
