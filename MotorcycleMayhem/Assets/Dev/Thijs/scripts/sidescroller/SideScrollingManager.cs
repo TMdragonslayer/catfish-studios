@@ -13,8 +13,8 @@ public class SideScrollingManager : MonoBehaviour
     [SerializeField] private SpawnMode foregroundSpawnMode = SpawnMode.InOrder;
 
     [Header("Scroll Speeds")]
-    [SerializeField] private float backgroundScrollSpeed = 2f;
-    [SerializeField] private float foregroundScrollSpeed = 5f;
+    [SerializeField] public float backgroundScrollSpeed = 2f;
+    [SerializeField] public float foregroundScrollSpeed = 5f;
 
     [Header("Prefab Arrays")]
     [SerializeField] private GameObject[] backgroundPrefabs;
